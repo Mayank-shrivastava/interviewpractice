@@ -1,0 +1,36 @@
+Client server architecture:
+    - Users (Client) <-> Server (Backend) <-> Database
+    - deamon process - A deamon process is a background process that runs continuously and 
+                performs specific tasks or services without direct user interaction. 
+                It is often used to handle tasks such as monitoring, scheduling, or providing services in the background.
+                Deemon processes are commonly found in operating systems and server environments, 
+                where they can perform tasks like managing network connections, handling system events, 
+                or running scheduled jobs.
+    - any process which makes a request for a task to be done (client)
+    - any process which is capable of accepting an incomming request, process the request and give a response (server)
+
+    - Ex: Bank of India(Took the loan)(Client) -> SBI Bank your account(Server) 
+    - Request response cycle:
+        - Client sends a request to the server
+        - Server processes the request and performs the necessary operations
+        - Server sends a response back to the client with the requested information or result
+    - We need common protocol to enable commnication between client and server, 
+            HTTP is the most common protocol used for this purpose.
+    - HTTP (Hyper Text Transfer Protocol) is a protocol used for communication between clients and servers on the web. 
+            It defines how messages are formatted and transmitted, and how servers and browsers should respond to 
+            various commands.
+    - Network Protocols are a set of rules and conventions that govern how data is transmitted and received over a network. 
+            They define the format, timing, sequencing, and error handling of data communication between devices. 
+            Examples of network protocols include TCP/IP, HTTP/HTTPS, FTP, and SMTP, WebSockets.
+    
+API (Application Programming Interface):
+    - An API is a set of rules and protocols that allows different software applications to communicate with each other. 
+    - It defines how requests and responses should be structured, what data can be accessed, and how to interact with the underlying system or service.
+    - APIs are used to enable integration between different software systems, allowing them to share data and functionality. 
+    - They can be used for various purposes, such as accessing databases, interacting with web services, or controlling hardware devices.
+
+    - API is a mechanism with which servers can expose there functionality to be accessible to the outside world.
+      anyone who has access to the api can come up and make a request defined in the format of the api and get the task done. 
+    
+    
+
