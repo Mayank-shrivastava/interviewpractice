@@ -33,4 +33,54 @@ API (Application Programming Interface):
       anyone who has access to the api can come up and make a request defined in the format of the api and get the task done. 
     
     
+Browser APIs: 
+    - Browser APIs are a set of programming interfaces provided by web browsers that allow developers to interact with and manipulate various aspects of the browser and the web page. 
+    - These APIs enable developers to create dynamic and interactive web applications by providing access to features such as the Document Object Model (DOM), event handling, multimedia, geolocation, and more.
+    - Examples of browser APIs include:
+        - DOM API: Allows developers to manipulate the structure and content of web pages.
+        - Fetch API: Provides a way to make network requests and handle responses.
+        - Geolocation API: Enables access to the user's location information.
+        - Web Storage API: Allows for storing data locally in the browser.
+        - Canvas API: Provides a way to draw graphics and animations on a web page.
 
+
+Scaling: 
+        - Vertical Scaling: Involves adding more resources (CPU, RAM, storage) to a single server to handle increased load. 
+                It is easier to implement but has limitations in terms of maximum capacity and can lead to downtime during upgrades.
+        - Horizontal Scaling: Involves adding more servers to distribute the load across multiple machines. 
+                It provides better scalability and fault tolerance but requires more complex infrastructure and management.
+
+DDOS (Distributed Denial of Service) Attack:
+    - A DDoS attack is a malicious attempt to disrupt the normal functioning of a targeted server, service, or network by overwhelming it with a flood of internet traffic. 
+    - The attack is distributed because it originates from multiple sources, often using a network of compromised computers (botnet) to generate the traffic. 
+    - The goal of a DDoS attack is to exhaust the target's resources, such as bandwidth, CPU, or memory, making it unavailable to legitimate users. 
+    - DDoS attacks can cause significant damage to businesses and organizations by causing downtime, loss of revenue, and damage to reputation. 
+    - Mitigation strategies for DDoS attacks include traffic filtering, rate limiting, and using content delivery networks (CDNs) to distribute traffic.
+
+Solution to DDOS attack: 
+    - Implement the rate limiting: This involves setting limits on the number of requests that can be made to a server within a specific time frame. 
+            This can help prevent overwhelming the server with excessive traffic.
+
+If the users are going to see same data from the server, we can cache the data on the client side and serve the data from 
+the cache instead of making a request to the server every time.
+
+Thundering herd problem: 
+    - The thundering herd problem occurs when a large number of clients simultaneously attempt to access a resource or service, such as a server or database, that is experiencing high load or is temporarily unavailable. 
+    - This can lead to a surge in traffic and requests, overwhelming the resource and causing further degradation of performance or even complete failure. 
+    - The thundering herd problem can be mitigated by implementing strategies such as load balancing, rate limiting, and caching to distribute the load and reduce the impact on the resource.
+
+Idempotent apis:
+    - In case of payments no payments should be made twice if the user clicks the pay button twice.
+    - Idempotent APIs are APIs that can be called multiple times without changing the result beyond the initial application.
+    - For example, if a user clicks the "pay" button twice, the API should only process the payment once and return the same result for subsequent calls.
+
+Concurrent Booking problem:
+    - In case of booking a flight ticket, if two users try to book the same seat at the same time, it can lead to a concurrent booking problem. 
+    - This can result in overbooking or double booking of the same seat, causing inconvenience to the users and potential loss of revenue for the airline. 
+    - To prevent this issue, airlines can implement locking mechanisms or use a first-come, first-served approach to ensure that only one user can book a particular seat at a time.
+
+    - Use distributed locking mechanism to prevent concurrent booking problem.
+    - Use cache to store the availability of seats and update the cache when a seat is booked to prevent multiple users from booking the same seat at the same time.
+
+
+https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design
