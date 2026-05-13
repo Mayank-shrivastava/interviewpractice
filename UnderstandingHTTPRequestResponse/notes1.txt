@@ -1,0 +1,10 @@
+- Communication between client and server needs network protocols like HTTP, HTTPS, FTP, SMTP, WebSocket.
+- SSH is a secure shell network protocol gives users a secure way to access computer over an unsecured network.
+    - Example: we want to login to remote machine/server, and run commends on that machine in a secure ways. 
+            - Logging into remote Linux servers
+            - Deploying backend applications
+            - Running commands on cloud servers
+            - Secure file transfer
+            - Git authentication with platforms like GitHub
+
+

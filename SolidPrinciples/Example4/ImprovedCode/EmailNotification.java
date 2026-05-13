@@ -1,0 +1,8 @@
+package SolidPrinciples.Example4.ImprovedCode;
+
+public class EmailNotification implements Notification {
+    @Override
+    public void sendNotification(String message) {
+        System.out.println("Email notification: " + message);
+    }
+}
