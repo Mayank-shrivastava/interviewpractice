@@ -1,0 +1,7 @@
+Object of a child class should be AS-IS substitutable in the variables of a parent class.
+
+Eg:
+ChessPiece king = new King();
+ChessPiece knight = new Knight();
+
+two behaviors like move() and castle() leads to violate Liskov Substitution Principle because not all chess pieces can castle.

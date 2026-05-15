@@ -1,0 +1,18 @@
+Open closed Principles:
+It states the a class should be open for extension but closed for modification. This means that you should be able to add
+new functionality to a class without change its existing code. This principle helps to make code more maintainable and flexible by allowing developers 
+to add new features without risking breaking existing functionality.
+
+  public void sendNotifications(List<Notification> notifications, String message) {
+        for (Notification notification : notifications) {
+            notification.sendNotification(message);
+        }
+    }
+
+This sendNotifications code in the NotificationSender class is the correct way to implement the Open Closed Principle.
+In this code, we have a method sendNotifications that takes a list of Notification(Interface) and a message.
+Every interface that implements the Notification interface can be passed to this method, allowing us to add new types of notifications 
+without modifying the existing code.
+For example, if we want to add a new type of notification, such as SMSNotification,
+we can simply create a new class that implements the Notification interface and 
+implement the sendNotification method without changing the NotificationSender class.

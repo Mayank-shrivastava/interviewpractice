@@ -1,0 +1,29 @@
+S in SOLID stands for Single Responsibility Principle. It states that a class should have only one reason to change, meaning it should have only one responsibility
+or job. This principle helps to make code more maintainable and easier to understand by ensuring that each class has a clear and focused purpose. 
+By adhering to the Single Responsibility Principle, developers can reduce the likelihood of bugs and make it easier to modify or extend the code in the future 
+without affecting other parts of the system.
+
+In the example we have two folders on have Problematic code and one has Better code.
+
+Problematic Code:
+---------------------------------
+In Problematic code we have class Employee which is doing too many things like  computeSalary, generateReport and fetchEmployeeData. 
+Since the class has too many responsibilities, there are too many reasons to update the class. 
+For example, if we want to change the way salary is computed, we would have to modify the Employee class,
+which could potentially introduce bugs in other parts of the code that rely on the Employee class, 
+like the report format change or data fetching logic change.
+---------------------------------
+
+Better Code:    
+---------------------------------
+In Better code, we have separated the responsibilities into different classes.
+First Employee Class which is responsible for employee data and basic operations related to employee.
+Then we have EmployeeSalaryCalculator class which is responsible for computing salary, and EmployeePerformanceReportGenerator class which is responsible 
+for generating reports.
+---------------------------------
+By separating the responsibilities into different classes, we have reduced the chances of introducing bugs when making changes to one aspect of the system.
+For example, if we want to change the way salary is computed, we can modify the EmployeeSalaryCalculator class without affecting the Employee class or the report generation logic.
+This makes the code more maintainable and easier to understand, as each class has a clear and focused purpose.
+----------------------------------
+In the code folder Example1, Example2, Example3 are examples of how to implement the Single Responsibility Principle in different ways.
+----------------------------------
