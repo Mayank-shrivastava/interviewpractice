@@ -18,14 +18,12 @@ public class VisaCreditCard extends CreditCard {
 
     @Override
     public void tapAndPay() {
-        // Visa cards may not support tap and pay, but we are forced to implement it
-        throw new UnsupportedOperationException("Tap and Pay not supported by Visa Credit Card");
+        System.out.println("Tap and Pay implemented here.")
     }
 
     @Override
     public void upiPayment() {
-        // Visa cards may not support UPI payments, but we are forced to implement it
-        throw new UnsupportedOperationException("UPI Payment not supported by Visa Credit Card");
+        System.out.println("upi payments implemented here.")
     }
 
 }

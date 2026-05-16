@@ -7,6 +7,7 @@ public class MasterCreditCard extends CreditCard implements RefundCompatibleCred
     private String expiryDate;
     private int cvv;
 
+    // composition - has a relationship with RefundStrategy
     private RefundStrategy refundStrategy;
     public MasterCreditCard() {
         this.refundStrategy = new BankRefundStrategy();
